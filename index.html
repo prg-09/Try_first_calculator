@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Think First Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card" id="challenge">
+  <h2>Before we calculate it for you…</h2>
+  <p class="sub">Try solving it yourself.</p>
+
+  <div class="question" id="question"></div>
+
+  <input id="answer" type="number" inputmode="numeric" placeholder="Your answer">
+  <button class="primary" id="checkBtn">Check answer</button>
+
+  <div id="feedback"></div>
+  <button class="link hidden" id="nextBtn">Now try another one?</button>
+  <br>
+  <button class="link" id="skipBtn">Skip → Use calculator</button>
+</div>
+
+<div class="card hidden" id="calculator">
+  <div id="display">0</div>
+  <div class="keys">
+    <button data-k="7">7</button><button data-k="8">8</button><button data-k="9">9</button><button class="op" data-k="÷">÷</button>
+    <button data-k="4">4</button><button data-k="5">5</button><button data-k="6">6</button><button class="op" data-k="×">×</button>
+    <button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button><button class="op" data-k="-">−</button>
+    <button data-k="0">0</button><button data-k=".">.</button><button class="op" data-k="=">=</button><button class="op" data-k="+">+</button>
+    <button class="wide" data-k="C">Clear</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
